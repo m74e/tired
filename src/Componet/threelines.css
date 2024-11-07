@@ -1,0 +1,27 @@
+.main-box .right-box .one-line {
+    width: 196px;
+    height: 6px;
+    border-radius: 8px;
+    background-color: #3c97af;
+  }
+   .right-box .two-line {
+    width: 196px;
+    height: 6px;
+    border-radius: 8px;
+    background-color: #ebebeb;
+  }
+ .right-box .three-line {
+    width: 196px;
+    height: 6px;
+    border-radius: 8px;
+    background-color: #ebebeb;
+    
+  }
+  .lines {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 0px 12px;
+    
+  }
