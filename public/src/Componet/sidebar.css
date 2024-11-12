@@ -1,0 +1,39 @@
+.main-box .left-box {
+  background-color: #3c97af;
+  height: 550px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  color: #ffffff;
+  gap: 50px;
+  position: relative;
+  overflow: hidden;
+  padding: 0 10px;
+  font-family: Poppins;
+}
+.dec {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-box .left-box .dec {
+  margin-bottom: 200px;
+}
+.left-lines {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.img-line {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 950px) {
+  .main-box .left-box {
+    display: none;
+  }
+}
