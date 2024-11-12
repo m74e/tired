@@ -2,27 +2,30 @@ import React from "react";
 import { useState } from "react";
 import first from "/public/arrow.svg";
 import second from "/public/whitearrow.svg";
-import { Link } from "react-router-dom";
 import Threelines from "../threelines.jsx";
 import "./nextbtn.css";
-
+import useStore from "../../zustand/store.js";
+import Sidebar from "/src/Componet/sidebar.jsx";
 export default function Nextbtn() {
-  const arrow = [first, second];
-  const [grey, setGrey] = useState(arrow[0]);
+ 
   const [show, setShow] = useState(false);
+  const { count, setCount } = useStore();
   const choose = () => {
     setShow(true);
-    setGrey(arrow[1]);
   };
-  const meow = (Event) => {
+  const clickme = (Event) => {
     if (!show) {
       return Event.preventDefault();
+    } else {
+      setCount(count + 1);
     }
   };
   return (
     <>
+    <div className="main-box">
+    <Sidebar />
       <div className="right-box">
-        <Threelines></Threelines>
+        <Threelines/>
         <div className="info">
           <h1>Let’s Get started!</h1>
           <p className="firstpar">How do you plan to use this platform</p>
@@ -59,14 +62,11 @@ export default function Nextbtn() {
           </button>
         </div>
 
-        <Link
-          to="/number"
-          className={`next1 ${show ? "block" : "none"}`}
-          onClick={meow}
-        >
+        <button className={`next1 ${show ? "block" : "none"}`} onClick={clickme}>
           <p>Next</p>
-          <img src={grey} alt="" />
-        </Link>
+          <img src={`${show==true? second:first}`} alt="" />
+        </button>
+        </div>
       </div>
     </>
   );

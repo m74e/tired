@@ -1,11 +1,14 @@
 import React from "react";
 import { useState } from "react";
 import "./number.css";
-import { Link } from "react-router-dom";
 import iraq from "/public/iraq.svg";
+import useStore from "../zustand/store";
+import Sidebar from "/src/Componet/sidebar.jsx";
+
 export default function NumberPage() {
   const [mobileNumber, setMobileNumber] = useState("");
-
+  const { count, setCount } = useStore();
+  console.log(count)
   const handleInputChange = (event) => {
     const value = event.target.value;
 
@@ -13,14 +16,20 @@ export default function NumberPage() {
       setMobileNumber(value);
     }
   };
-  const meow1 = (Event) => {
+  const checkk = (Event) => {
     if (mobileNumber.length < 11 || mobileNumber.length < 10) {
       return Event.preventDefault();
+    }
+    else{
+      setCount(count+1)
     }
   };
   return (
     <>
+    <div className="main-box">
+    <Sidebar />
       <main>
+         
         <div className="lines">
           <div className="one-line2"></div>
           <div className="flex">
@@ -56,18 +65,20 @@ export default function NumberPage() {
             />
           </div>
         </div>
-        <Link
-          to="/vaild"
+        <button
+        
           className={`next1 ${
             mobileNumber.length == 10 || mobileNumber.length == 11
               ? "block"
               : "none"
           }`}
-          onClick={meow1}
+          onClick={checkk}
         >
           <p>Send verification code</p>
-        </Link>
+        </button>
+        
       </main>
+      </div>
     </>
   );
 }

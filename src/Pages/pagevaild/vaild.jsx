@@ -1,22 +1,25 @@
 import React, { useState, useEffect } from "react";
 import { OtpInput } from "reactjs-otp-input";
 import clock from "/public/clock.svg";
+import useStore from "../../zustand/store";
+import Sidebar from "/src/Componet/sidebar.jsx";
 import "./vaild.css";
-import { Link } from "react-router-dom";
+
 export default function OtpVerification() {
+  const { count, setCount } = useStore();
   const [otp, setOtp] = useState("");
   const [counter, setCounter] = useState(59);
-
   const handleChange = (otp) => setOtp(otp);
 
-
   useEffect(() => {
-    if (counter > 0) {
+    if(counter > 0) {
       const interval = setInterval(() => {
         setCounter((prevCounter) => prevCounter - 1);
       }, 1000);
+      
       return () => clearInterval(interval);
     }
+  
   }, [counter]);
 
   const handleRefresh = () => {
@@ -27,6 +30,8 @@ export default function OtpVerification() {
 
   return (
     <>
+    <div className="main-box">
+    <Sidebar />
       <main>
         <div className="lines">
           <div className="one-line1"></div>
@@ -42,7 +47,7 @@ export default function OtpVerification() {
           </p>
         </div>
         <div className="otpinput">
-          <OtpInput 
+          <OtpInput
             className="insideotp"
             value={otp}
             onChange={handleChange}
@@ -66,20 +71,17 @@ export default function OtpVerification() {
           </p>
         </div>
         <footer>
-          <Link
-            to="/email"
-            className="next2"
+          <button
+            className={`next2 ${otp.length !== 6 ? "block1" : "none1"}`}
+            disabled={otp.length !== 6}
+
+            onClick={()=>setCount(count+1)}
           >
-            <button className={`next2 ${
-            otp.length!==6
-              ? "block1"
-              : "none1"
-          }`} disabled={otp.length !== 6}  >
-              Verify
-            </button>
-          </Link>
+            Verify
+          </button>
         </footer>
       </main>
+      </div>
     </>
   );
 }
