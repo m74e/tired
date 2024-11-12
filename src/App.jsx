@@ -27,15 +27,10 @@ function App() {
 
   return (
     <BrowserRouter>
-      
-        
-
-        <Routes>
-          <Route path="/" element={counterPath()} />
-          <Route path="/web" element={<Web />} />
-          
-        </Routes>
-      
+      <Routes>
+        <Route path="/" element={counterPath()} />
+        <Route path="/web" element={<Web />} />
+      </Routes>
     </BrowserRouter>
   );
 }
