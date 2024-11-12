@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./web.css";
-
+import Person from "/public/person.svg";
 import Star from "/public/star.svg";
 import Pen from "/public/pen.svg";
 import Mainheader from "../../Componet/mainheader/mainheadr.jsx";
