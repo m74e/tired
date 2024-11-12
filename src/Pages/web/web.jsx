@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./web.css";
-import Person from "/public/Person.svg";
+
 import Star from "/public/star.svg";
 import Pen from "/public/pen.svg";
 import Mainheader from "../../Componet/mainheader/mainheadr.jsx";
 
 export default function Web() {
-  
+  // const [edit, setEdit] = useState("");
+  // const Edit = () => {
+  //   if ((document.designMode = "on")) {
+  //     return;
+  //   }
+  //   // return setEdit
+  //   else if ((document.designMode = "off")) {
+  //     return;
+  //   }
+  // };
   return (
     <>
       <div className="contianer">
@@ -19,12 +28,19 @@ export default function Web() {
                 <img src={Star} alt="" />
                 <p>5.0</p>
               </div>
-              <button>Edit Profile</button>
+              <button
+                onClick={() => {
+                  document.designMode =
+                    document.designMode === "off" ? "on" : "off";
+                }}
+              >
+                Edit Profile
+              </button>
             </div>
             <div className="about">
               <div className="about-inside">
                 <h5>About</h5>
-                <img src={Pen} alt="" />
+                <img src={Pen}  alt="" />
               </div>
               <div>
                 <p>

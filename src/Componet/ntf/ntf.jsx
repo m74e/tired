@@ -28,52 +28,55 @@ export default function ntf() {
             <div className="skyDot"></div>
             <img src={Zanib} alt="" />
             <p>
-              <span className="nameNot">Zainab Saad</span> comment on <br /> your project <span className="timeNot">h2</span>
+              <span className="nameNot">Zainab Saad</span> comment on <br />{" "}
+              your project <span className="timeNot">h2</span>
             </p>
           </div>
           <div className="cardPerson">
             <div className="skyDot"></div>
             <img src={Zanib} alt="" />
             <p>
-              <span className="nameNot">Ali Saad</span> Apply your project  <span className="timeNot">2h</span> 
+              <span className="nameNot">Ali Saad</span> Apply your project{" "}
+              <span className="timeNot">2h</span>
             </p>
           </div>
           <div className="cardPerson">
             <div className="skyDot"></div>
             <img src={Zanib} alt="" />
             <p>
-              <span className="nameNot">Karar Emad</span> Liked your project  <span className="timeNot">2h</span>
+              <span className="nameNot">Karar Emad</span> Liked your project{" "}
+              <span className="timeNot">2h</span>
             </p>
           </div>
 
           <p className="weeek">This week</p>
           <div className="thisWeek">
             <div className="cardPersonWeek">
-              
               <img src={Zanib} alt="" />
               <p>
-                <span className="nameNot">Zena saad</span> comment on <br /> your project  <span className="timeNot">1d</span>
+                <span className="nameNot">Zena saad</span> comment on <br />{" "}
+                your project <span className="timeNot">1d</span>
               </p>
             </div>
             <div className="cardPersonWeek">
-              
               <img src={Zanib} alt="" />
               <p>
-                <span className="nameNot">ghoufran saad</span> comment <br /> on  your project <span className="timeNot">2d</span> 
+                <span className="nameNot">ghoufran saad</span> comment <br /> on
+                your project <span className="timeNot">2d</span>
               </p>
             </div>
             <div className="cardPersonWeek">
-            
               <img src={Zanib} alt="" />
               <p>
-                <span className="nameNot">Huda salih</span> comment on <br /> your project <span className="timeNot"> 3d</span>
+                <span className="nameNot">Huda salih</span> comment on <br />{" "}
+                your project <span className="timeNot"> 3d</span>
               </p>
             </div>
             <div className="cardPersonWeek">
-           
               <img src={Zanib} alt="" />
               <p>
-                <span className="nameNot">Mohammed Saad </span> <br /> comment on your project <br /> <span className="timeNot">1w</span>
+                <span className="nameNot">Mohammed Saad </span> <br /> comment
+                on your project <br /> <span className="timeNot">1w</span>
               </p>
             </div>
           </div>
