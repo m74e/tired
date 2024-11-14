@@ -7,7 +7,9 @@ import "./nextbtn.css";
 import useStore from "../../zustand/store.js";
 import Sidebar from "/src/Componet/sidebar.jsx";
 import Act from "/public/activecl.svg";
-import  Notactv from"/public/client.svg"
+import  Notactv from"/public/client.svg";
+import Actfree from "/public/activefree.svg"
+import Actfreelancer from "/public/freelance.svg"
 export default function Nextbtn() {
   const [show, setShow] = useState(false);
   const { count, setCount } = useStore();
@@ -36,10 +38,10 @@ export default function Nextbtn() {
             <button onClick={choose} className="free">
               <img
                 className="notactivefree"
-                src="/public/freelance.svg"
+                src={Actfreelancer}
                 alt="img"
               />
-              <img className="activefree" src="/public/activefree.svg" alt="" />
+              <img className="activefree" src={Actfree} alt="" />
               <div>
                 <h4>Freelancer</h4>
                 <p>
