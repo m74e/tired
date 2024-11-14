@@ -1,0 +1,189 @@
+.secon-Line {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.inside-secon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 80px;
+  padding: 10px 10px;
+  box-shadow: 1px 2px 8px 0px #21868e1f;
+  border-radius: 16px;
+  background-color: #ffffff;
+  position: relative;
+}
+.inside-secon img {
+  width: 60px;
+  height: 60px;
+}
+
+.inside-secon .input {
+  height: 50px;
+  background-color: #fafafa;
+  padding-left: 16px;
+  width: 80%;
+  border: none;
+  border-radius: 16px;
+}
+.right-Recent {
+  display: flex;
+  flex-direction: column;
+}
+.Posts {
+  height: 426px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 8px 0px #3c97af14;
+  border-radius: 16px;
+  padding: 18px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.npersonInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.anotherdivinInfo p {
+  background-color: #ddf8e7;
+  color: #4db251;
+  padding: 10px 14px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: Poppins;
+}
+.imginsideinfo img {
+  width: 40px;
+  height: 40px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.nameofclient {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.nameofclient p {
+  color: #808080;
+  font-size: 10px;
+  font-weight: 400;
+  font-family: "Source Sans Pro" !important;
+}
+.nameofclient h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.everything {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 12px;
+}
+.anotherdivinInfo {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.anotherdivinInfo button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.forced-Left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: left;
+  align-items: flex-start;
+}
+.disc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.disc h2 {
+  font-size: 16px;
+  font-style: 600;
+}
+.disc p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #999999;
+}
+.disc p span {
+  color: #3c97af;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.disc img {
+  height: 210px;
+}
+.likeBtnAndCom {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.lik {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+.lik img {
+  width: 24px;
+  height: 24px;
+}
+.Comment {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+.Comment img {
+  width: 24px;
+  height: 24px;
+}
+.Postsdicrption {
+  height: 330px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 8px 0px #3c97af14;
+  border-radius: 16px;
+  padding: 18px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.lik button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.Plusbtn button{
+    background-color: #3C97AF;
+    border: none;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 63px;
+    top: 35px;
+}
+.Plusbtn button p{
+color: white;
+font-size: 24px;
+}

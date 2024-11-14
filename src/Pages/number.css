@@ -94,7 +94,7 @@ main {
   font-weight: 500;
   padding: 0px 12px;
 }
-input {
+.VeriactionBox {
   padding: 0px 8px;
   height: 38px;
   border: none;

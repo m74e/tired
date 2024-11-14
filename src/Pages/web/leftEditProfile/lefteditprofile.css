@@ -1,0 +1,126 @@
+.firstLine {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 10px;
+  }
+  .editProfile {
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+    gap: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 8px 0px #21868e1f;
+  }
+  .editProfile button {
+    background-color: #3c97af;
+    border: none;
+    cursor: pointer;
+    border-radius: 16px;
+    height: 40px;
+    width: 300px;
+    color: #ffffff;
+  }
+  .feedBack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .feedBack h3 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .feedBack p {
+    color: #999999;
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .about {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 12px 0px #21868e14;
+    padding: 10px 10px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    gap: 16px;
+  }
+  .about p {
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .about-inside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+.headerProject{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .headerProjectRight{
+    display: flex;
+    gap: 16px;
+  }
+  .headerProjectRight p{
+  font-size: 28px;
+  }
+  .projectHistory{
+    background-color: #FFFFFF;
+    height: fit-content;
+    box-shadow: 0px 2px 8px 0px #21868E1F;
+  border-radius: 16px;
+  padding: 10px 12px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  }
+  .projectName{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  .greenContant{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    align-items: center;
+  }
+  .greenLineFitcontant{
+    height: 98px;
+    width: 2px;
+    background-color: #3C97AF;
+  }
+  .greenLeftCircl{
+    background-color: #3C97AF;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  .greenLeftCirclText{
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .greenLeftCirclText p{
+    color: #999999;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .rightTheLineParaghraph p{
+  color: #000000;
+  font-size: 12px;
+  font-weight: 400;
+  }
+  .rightTheLineParaghraph{
+    padding-top: 10px;
+  }
+  

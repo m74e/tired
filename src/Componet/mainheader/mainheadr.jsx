@@ -11,7 +11,7 @@ export default function Mainheadr() {
           <img src={Freelancer} alt="" />
         </div>
         <div className="menu">
-          <a href="#">Home</a>
+          <a href="#" className="aHome">Home</a>
           <a href="#">Dashboard</a>
           <a href="#">Settings</a>
         </div>

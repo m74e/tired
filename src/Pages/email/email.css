@@ -88,9 +88,17 @@ main {
   font-weight: 500;
   color: #0a0a0a;
 }
-.inputname input {
+.inputname .inputEmail1 {
   padding: 0px 8px;
   width: 100%;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid #EBEBEB;
+}
+.inputname .inputEmail1:focus{
+  background-color: #ecf6f9;
+  outline: none;
+  border: 1px solid #3c97af
 }
 .inside input:not(:placeholder-shown) {
   background-color: #ecf6f9;

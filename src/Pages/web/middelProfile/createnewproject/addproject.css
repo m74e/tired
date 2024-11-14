@@ -1,0 +1,203 @@
+.parantOfnewpro {
+  width: 640px;
+  height: 610px;
+  background-color: #ffffff;
+  font-family: Poppins;
+  position: absolute;
+  top: 10px;
+  border-radius: 16px;
+  box-shadow: 1px 2px 8px 0px #21868e40;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 16px;
+}
+.cancle {
+  display: none;
+}
+.bigChild {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bigChild .redX {
+  border: 1px solid #eb0000;
+  border-radius: 50%;
+  background-color: #fcb8b8;
+  width: 44px;
+  height: 44px;
+  color: #eb0000;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.TwoLinesGreenOneAndGreyOne {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.LineGreenOne {
+  background-color: #3c97af;
+  height: 6px;
+  width: 50%;
+  border-radius: 8px;
+}
+.LineGreyOne {
+  background-color: #bfbfbf;
+  height: 6px;
+  width: 50%;
+  border-radius: 8px;
+}
+.SelectRequiredQualifications {
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.SelectRequiredQualifications select {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #bfbfbf;
+  border-radius: 16px;
+  color: #bfbfbf;
+  font-size: 16px;
+}
+.SelectRequired h5 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.SelectRequiredQualificationsInput {
+  height: 200px;
+}
+.SelectRequiredQualifications select:focus {
+  outline: #3c97af;
+}
+#SelectRequiredQualificationsInput {
+  padding-left: 6px;
+  border: 1px solid #bfbfbf;
+  width: 100%;
+  border-radius: 8px;
+  position: relative;
+}
+.SelectRequiredQualificationsInput::placeholder {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.threebtnboth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+}
+.twobtnboth {
+  display: flex;
+  gap: 8px;
+}
+.btnForUpload {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 2px 12px 0px #3c97af14;
+  width: 88px;
+  height: 56px;
+  cursor: pointer;
+  border: none;
+}
+.btnForUploadImg {
+  width: 19px !important;
+  height: 19px !important;
+}
+.btnForUploadParaadd {
+  color: #3c97af;
+}
+.NextBtnForUploadadd {
+  width: 90% !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 50px;
+  background-color: #3c97af !important;
+  color: #ffffff;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.paraNextBtn {
+  font-family: Exo;
+  font-size: 16px;
+  font-weight: 400;
+}
+.ArrowForNextBtn {
+  width: 15px !important;
+  height: 15px !important;
+}
+.TimerHourAndPro {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.preHouer {
+  background-color: #ffffff;
+  border: 1px solid #bfbfbf;
+  width: 50%;
+  height: 50px;
+  border-radius: 8px;
+}
+.preHouerp2{
+    color: #d9d9d9;
+}
+.preHouer:focus {
+  background-color: #3c97af;
+  .preHouerp2{
+    color: #ffffff;
+  }
+}
+
+
+.forTheProject {
+  width: 50%;
+  height: 50px;
+  background-color: #ffffff;
+  border: 1px solid #bfbfbf;
+  border-radius: 8px;
+}
+.forTheProject:focus {
+  background-color: #3c97af;
+   .preHouerp1 {
+    color: #ffffff;
+  }
+}
+.preHouerp1{
+    color:#d9d9d9 ;
+}
+.centerthebtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 200px;
+}
+.paraNextBtnadd {
+  font-family: Exo;
+  font-size: 16px;
+  font-weight: 400;
+}
+.NextBtnForUploadaddpara {
+  font-size: 22px;
+}
+.inputPriceInHour {
+  width: 100%;
+  height: 46px;
+  border: 1px solid #bfbfbf;
+  padding-left: 6px;
+  border-radius: 8px;
+}
+.inputPriceInHour::placeholder {
+  color: #d9d9d9;
+}

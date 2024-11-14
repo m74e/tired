@@ -1,0 +1,72 @@
+.MainRecent{
+    display: flex;
+   justify-content: center;
+    flex-direction: column;
+  }
+  .right-Recent{
+    height: fit-content;
+    width: 400px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 8px 0px #21868E1F;
+    padding: 22px 12px;
+    border-radius: 16px;
+  }
+  .textRecent{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  }
+  .textRecent p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #3C97AF;
+    cursor: pointer;
+  }
+  .textRecent h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #0D0D0D;
+  }
+  .recentWebDesignBorder{
+    border-bottom: 1px solid #F2F2F2;
+    padding: 12px 0px;
+  }
+  .recentWebDesign{
+    padding-top: 26px;
+    padding-bottom: 26px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+   
+  }
+  .colom{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+  }
+  .greencircal button{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #3c97af;
+    border: none;
+    cursor: pointer;
+  }
+  .textInsideRecent{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .CenterTheTexton{
+  display: flex;
+  flex-direction: column;
+  display: block;
+  }
+  .CenterTheTextoff{
+   
+    display: none;
+  }

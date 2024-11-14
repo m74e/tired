@@ -56,7 +56,7 @@ export default function NumberPage() {
                   <p>+964</p>
                 </div>
            
-            <input
+            <input className="VeriactionBox"
               maxLength={11}
               type="text"
               placeholder="Enter Your Phone Number"
