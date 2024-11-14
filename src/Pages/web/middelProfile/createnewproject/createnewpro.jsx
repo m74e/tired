@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./createnewpro.css";
-
+import Upload from "../../../../assets/uploadimg.png";
 import DocumendBracts from "../../../../assets/documentcode.png";
 import Arrow from "/public/whitearrow.svg";
 import useStore from "../../../../zustand/store";
@@ -79,7 +79,7 @@ const createnewpro = () => {
           <div className="twobtnboth">
             {" "}
             <button className="btnForUpload">
-              <img className="btnForUploadImg" src="" alt="" />
+              <img className="btnForUploadImg" src={Upload} alt="" />
               <p className="btnForUploadPara">media</p>
             </button>
             <button className="btnForUpload">
