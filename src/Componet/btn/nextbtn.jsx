@@ -6,6 +6,8 @@ import Threelines from "../threelines.jsx";
 import "./nextbtn.css";
 import useStore from "../../zustand/store.js";
 import Sidebar from "/src/Componet/sidebar.jsx";
+import Act from "/public/activecl.svg";
+import  Notactv from"/public/client.svg"
 export default function Nextbtn() {
   const [show, setShow] = useState(false);
   const { count, setCount } = useStore();
@@ -48,10 +50,10 @@ export default function Nextbtn() {
             <button onClick={choose} className="client">
               <img
                 className="notactiveclient"
-                src="./public/client.svg"
+                src={Notactv}
                 alt="img"
               />
-              <img className="activecl" src="/public/activecl.svg" alt="img" />
+              <img className="activecl" src={Act} alt="img" />
               <div>
                 {" "}
                 <h4>Client</h4>
