@@ -3,6 +3,12 @@ import "./ntf.css";
 import Not from "/public/notifcation.svg";
 import ActiveNtf from "/public/activeNtf.svg";
 import Zanib from "/public/zanib.svg";
+import Okper from "/public/okper.svg"
+import Compo from "/public/compo.svg";
+import Zena from "/public/zena.svg";
+import Ghoufran from "/public/ghoufran.svg";
+import Huda from "/public/huda.svg";
+import Moh from "/public/moh.svg";
 export default function ntf() {
   const [showup, setShowup] = useState(false);
   const [modal, setModal] = useState(false);
@@ -45,7 +51,7 @@ export default function ntf() {
             </div>
             <div className="cardPerson">
               <div className="skyDot"></div>
-              <img src={Zanib} alt="" />
+              <img src={Okper} alt="" />
               <p>
                 <span className="nameNot">Ali Saad</span> Apply your project{" "}
                 <span className="timeNot">2h</span>
@@ -53,7 +59,7 @@ export default function ntf() {
             </div>
             <div className="cardPerson">
               <div className="skyDot"></div>
-              <img src={Zanib} alt="" />
+              <img src={Compo} alt="" />
               <p>
                 <span className="nameNot">Karar Emad</span> Liked your project{" "}
                 <span className="timeNot">2h</span>
@@ -63,28 +69,28 @@ export default function ntf() {
             <p className="weeek">This week</p>
             <div className="thisWeek">
               <div className="cardPersonWeek">
-                <img src={Zanib} alt="" />
+                <img src={Zena} alt="" />
                 <p>
                   <span className="nameNot">Zena saad</span> comment on <br />{" "}
                   your project <span className="timeNot">1d</span>
                 </p>
               </div>
               <div className="cardPersonWeek">
-                <img src={Zanib} alt="" />
+                <img src={Ghoufran} alt="" />
                 <p>
                   <span className="nameNot">ghoufran saad</span> comment <br />{" "}
                   on your project <span className="timeNot">2d</span>
                 </p>
               </div>
               <div className="cardPersonWeek">
-                <img src={Zanib} alt="" />
+                <img src={Huda} alt="" />
                 <p>
                   <span className="nameNot">Huda salih</span> comment on <br />{" "}
                   your project <span className="timeNot"> 3d</span>
                 </p>
               </div>
               <div className="cardPersonWeek">
-                <img src={Zanib} alt="" />
+                <img src={Moh} alt="" />
                 <p>
                   <span className="nameNot">Mohammed Saad </span> <br /> comment
                   on your project <br /> <span className="timeNot">1w</span>

@@ -1,6 +1,6 @@
 .main-box .left-box {
   background-color: #3c97af;
-  height: 550px;
+  min-height: 670px;
   width: 100%;
   display: flex;
   align-items: center;

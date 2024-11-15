@@ -1,24 +1,48 @@
-.parantOfnewpro {
-  width: 640px;
-  height: 610px;
-  background-color: #ffffff;
-  font-family: Poppins;
-  position: absolute;
-  top: 10px;
-  border-radius: 16px;
-  box-shadow: 1px 2px 8px 0px #21868e40;
-  z-index: 99;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 16px 16px;
-}
 .cancle {
   display: none;
 }
+.selectin {
+  margin-top: 10px;
+  background-color: #ffffff;
+  box-shadow: 1px 2px 8px 0px #21868e1f;
+  padding: 8px 8px;
+  border-radius: 8px; 
+}
+.btnandarr {
+  color: #3c97af;
+  cursor: pointer;
+}
+.selectin p {
+  color: #999999;
+  cursor: pointer;
+}
+.selectin p:hover {
+  color: #3c97af;
+  transition: 0.3s;
+}
+.btnandarr {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #bfbfbf;
+  align-items: center;
+  border-radius: 8px;
+  padding: 0px 6px;
+  height: 48px;
+}
+.btnandarr .btndrop {
+  background: none;
+  border: none;
+}
+.btnandarr:active {
+  border: 1px solid #3c97af;
+}
+.dropimg {
+  width: 24px !important;
+  height: 24px !important;
+}
 
-.Plusbtn2 button{
-  background-color: #3C97AF;
+.Plusbtn1 button {
+  background-color: #3c97af;
   border: none;
   width: 32px;
   height: 32px;
@@ -31,9 +55,9 @@
   right: 63px;
   top: 35px;
 }
-.Plusbtn2 button p{
-color: white;
-font-size: 24px;
+.Plusbtn1 button p {
+  color: white;
+  font-size: 24px;
 }
 .bigChild {
   display: flex;
@@ -86,21 +110,26 @@ font-size: 24px;
 }
 .SelectRequiredQualificationsInput {
   height: 200px;
+  width: 100%;
+  border: 1px solid #bfbfbf;
+  display: flex;
+  justify-content: space-between;
 }
 .SelectRequiredQualifications select:focus {
   outline: #3c97af;
 }
+
 #SelectRequiredQualificationsInput {
   padding-left: 6px;
   border: 1px solid #bfbfbf;
   width: 100%;
   border-radius: 8px;
   position: relative;
+  resize: none;
 }
-.SelectRequiredQualificationsInput::placeholder {
-  position: absolute;
-  left: 10px;
-  top: 10px;
+#SelectRequiredQualificationsInput:focus {
+  outline: none;
+  border: 1px solid #3c97af;
 }
 .threebtnboth {
   display: flex;
@@ -125,17 +154,17 @@ font-size: 24px;
   width: 19px !important;
   height: 19px !important;
 }
-.btnForUploadParaadd {
+.btnForUploadPara {
   color: #3c97af;
 }
-.NextBtnForUploadadd {
-  width: 90% !important;
-  display: flex !important;
+.NextBtnForUpload {
+  width: 60%;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   height: 50px;
-  background-color: #3c97af !important;
+  background-color: #3c97af;
   color: #ffffff;
   border: none;
   border-radius: 16px;
@@ -149,67 +178,4 @@ font-size: 24px;
 .ArrowForNextBtn {
   width: 15px !important;
   height: 15px !important;
-}
-.TimerHourAndPro {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-}
-
-.preHouer {
-  background-color: #ffffff;
-  border: 1px solid #bfbfbf;
-  width: 50%;
-  height: 50px;
-  border-radius: 8px;
-}
-.preHouerp2{
-    color: #d9d9d9;
-}
-.preHouer:focus {
-  background-color: #3c97af;
-  .preHouerp2{
-    color: #ffffff;
-  }
-}
-.forTheProject {
-  width: 50%;
-  height: 50px;
-  background-color: #ffffff;
-  border: 1px solid #bfbfbf;
-  border-radius: 8px;
-}
-.forTheProject:focus {
-  background-color: #3c97af;
-   .preHouerp1 {
-    color: #ffffff;
-  }
-}
-.preHouerp1{
-    color:#d9d9d9 ;
-}
-.centerthebtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 200px;
-}
-.paraNextBtnadd {
-  font-family: Exo;
-  font-size: 16px;
-  font-weight: 400;
-}
-.NextBtnForUploadaddpara {
-  font-size: 22px;
-}
-.inputPriceInHour {
-  width: 100%;
-  height: 46px;
-  border: 1px solid #bfbfbf;
-  padding-left: 6px;
-  border-radius: 8px;
-}
-.inputPriceInHour::placeholder {
-  color: #d9d9d9;
 }

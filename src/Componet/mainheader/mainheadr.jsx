@@ -16,8 +16,8 @@ export default function Mainheadr() {
           <a href="#">Settings</a>
         </div>
         <div className="searchBar">
-          <input type="text" placeholder="Search" />
-          <Ntf/>
+         <div> <input type="text" placeholder="Search" /></div>
+         <div><Ntf/></div>
         </div>
       </div>
     </header>
