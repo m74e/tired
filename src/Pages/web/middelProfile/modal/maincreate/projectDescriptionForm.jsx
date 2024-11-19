@@ -5,7 +5,8 @@ import "./projectDescriptionForm.css";
 import GreenA from "/public/greena.svg";
 import DownarrowG from "/public/downarrowg.svg";
 import useStore from "../../../../../zustand/store";
-
+import X from "/public/x.svg";
+import Upnew from "/public/upnew.svg"
 const projectDescriptionForm = ({ setIsOpen }) => {
   const { nextModal, setNextModal } = useStore();
   const [select, setSelect] = useState();
@@ -22,7 +23,9 @@ const projectDescriptionForm = ({ setIsOpen }) => {
       <div className="bigChild">
         <h2>Create a project</h2>{" "}
         <button className={`redX`} onClick={() => setIsOpen(false)}>
-          X
+        <img className="xBtn" src={
+        X
+          } alt="" />
         </button>
       </div>
       <div className="TwoLinesGreenOneAndGreyOne">
@@ -60,14 +63,14 @@ const projectDescriptionForm = ({ setIsOpen }) => {
         className="SelectRequiredQualificationsInput"
         id="SelectRequiredQualificationsInput"
         type="text"
-        placeholder="Enter Description for the project"
+        placeholder="  Enter Description for the project"
       />
 
       <div className="threebtnboth">
         <div className="twobtnboth">
           {" "}
           <button className="btnForUpload">
-            <img className="btnForUploadImg" src="" alt="" />
+            <img className="btnForUploadImg" src={Upnew} alt="" />
             <p className="btnForUploadPara">media</p>
           </button>
           <button className="btnForUpload">

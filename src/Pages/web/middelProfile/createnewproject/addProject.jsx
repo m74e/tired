@@ -1,20 +1,23 @@
 import React, { useState } from "react";
 import "./addproject.css";
-import ProjectModal from "./createnewpro";
+import X from "/public/x.svg"
 const addProject = ({ setIsOpen }) => {
   return (
     <>
       <div className="bigChild">
         <h2>Project Duration</h2>
         <button className={`redX`} onClick={() => setIsOpen(false)}>
-          X
+          <img className="xBtn" src={
+        X
+          } alt="" />
         </button>
       </div>
-      <div className="TwoLinesGreenOneAndGreyOne">
+      <div className="TwoLinesGreenOneAndGreenOne">
         <div className="LineGreenOne"></div>
-        <div className="LineGreyOne"></div>
+        <div className="LineGreenOne"></div>
       </div>
-      <h5 className="SelectRequired">Select Required Qualifications</h5>
+      <h5 className="Project-Duration">Project Duration</h5>
+      <input type="text" className="inputPriceInHour" placeholder="Duration of the project"/>
       <div className="SelectRequiredQualifications">
         <p className="PricingType">Pricing Type</p>
         <div className="TimerHourAndPro">

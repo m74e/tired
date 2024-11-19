@@ -53,7 +53,11 @@ font-size: 24px;
   align-items: center;
   cursor: pointer;
 }
-.TwoLinesGreenOneAndGreyOne {
+.redX .xBtn{
+  width: 24px !important;
+  height: 24px !important;
+}
+.TwoLinesGreenOneAndGreenOne {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,11 +69,10 @@ font-size: 24px;
   width: 50%;
   border-radius: 8px;
 }
-.LineGreyOne {
-  background-color: #bfbfbf;
-  height: 6px;
-  width: 50%;
-  border-radius: 8px;
+.Project-Duration{
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .SelectRequiredQualifications select {
@@ -90,13 +93,7 @@ font-size: 24px;
 .SelectRequiredQualifications select:focus {
   outline: #3c97af;
 }
-#SelectRequiredQualificationsInput {
-  padding-left: 6px;
-  border: 1px solid #bfbfbf;
-  width: 100%;
-  border-radius: 8px;
-  position: relative;
-}
+
 .SelectRequiredQualificationsInput::placeholder {
   position: absolute;
   left: 10px;
