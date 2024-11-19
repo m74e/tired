@@ -6,6 +6,10 @@ import Threelines from "../threelines.jsx";
 import "./nextbtn.css";
 import useStore from "../../zustand/store.js";
 import Sidebar from "/src/Componet/sidebar.jsx";
+import Actfree from "/public/activefree.svg";
+import ActCli from "/public/activecl.svg";
+import Freela from "/public/freelance.svg";
+import Clint from "/public/client.svg"
 export default function Nextbtn() {
  
   const [show, setShow] = useState(false);
@@ -35,10 +39,10 @@ export default function Nextbtn() {
           <button onClick={choose} className="free">
             <img
               className="notactivefree"
-              src="/public/freelance.svg"
+              src={Freela}
               alt="img"
             />
-            <img className="activefree" src="/public/activefree.svg" alt="" />
+            <img className="activefree" src={Actfree} alt="" />
             <div>
               <h4>Freelancer</h4>
               <p>
@@ -49,10 +53,10 @@ export default function Nextbtn() {
           <button onClick={choose} className="client">
             <img
               className="notactiveclient"
-              src="./public/client.svg"
+              src={Clint}
               alt="img"
             />
-            <img className="activecl" src="/public/activecl.svg" alt="img" />
+            <img className="activecl" src={ActCli} alt="img" />
             <div>
               {" "}
               <h4>Client</h4>

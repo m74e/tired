@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Threesvg from "/public/threeother.svg";
 import Computerwhand from "../../../assets/com.png";
 import LikeBtn from "/public/Like.svg";
@@ -6,39 +6,33 @@ import Comment from "/public/comment.svg";
 import Person from "/public/person.svg";
 import NoneActive from "/public/noneActiveLike.svg";
 import ProjectModal from "./createnewproject/createnewpro";
-import Createp from "./modal/create.jsx";
-import AddProject from "../middelProfile/createnewproject/addProject.jsx";
+import ProjectDescriptionForm from "./modal/maincreate/projectDescriptionForm.jsx";
 import "./middel.css";
 import useStore from "../../../zustand/store.js";
+import AddProject from "./createnewproject/addProject.jsx";
+
 const middel = () => {
-  const { ContModal, setContModal } = useStore();
+  const { nextModal, setNextModal } = useStore();
   const [show, setShow] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const likeButton = () => {
     setShow(!show);
   };
-  const openAndCancle = () => {
-    {
-      setIsOpen(!isOpen);
+
+  useEffect(() => {
+    if (!isOpen) {
+      setNextModal(0);
+    }
+  }, [isOpen]);
+  
+  const convertToNextPage = () => {
+    if (nextModal === 0) {
+      return <ProjectDescriptionForm setIsOpen={setIsOpen} />;
+    } else if (nextModal === 1) {
+      return <AddProject setIsOpen={setIsOpen} />;
     }
   };
-
-  function ModalPath() {
-    if (ContModal === 0) {
-      return (
-        <ProjectModal isOpen={isOpen} setIsOpen={setIsOpen}>
-          <Createp isOpen={isOpen} setIsOpen={setIsOpen} />
-        </ProjectModal>
-      );
-    } else if (ContModal === 1) {
-      return (
-        <ProjectModal isOpen={isOpen} setIsOpen={setIsOpen}>
-          <AddProject/>
-        </ProjectModal>
-      );
-    }
-  }
   return (
     <>
       {" "}
@@ -50,14 +44,18 @@ const middel = () => {
             type="text"
             placeholder="Mustafa Let’s Create a Project !"
           />
-          <ProjectModal isOpen={isOpen} setIsOpen={setIsOpen}>
-            <Createp isOpen={isOpen} setIsOpen={setIsOpen} />
-          </ProjectModal>
+
+          {/* <ProjectDescriptionForm isOpen={isOpen} setIsOpen={setIsOpen} /> */}
+          {/* <AddProject isOpen={isOpen} setIsOpen={setIsOpen} /> */}
+
           <div className="Plusbtn1">
-            <button onClick={openAndCancle}>
+            <button onClick={() => setIsOpen(true)}>
               <p>+</p>
             </button>
           </div>
+          <ProjectModal isOpen={isOpen} setIsOpen={setIsOpen}>
+            {convertToNextPage()}
+          </ProjectModal>
         </div>
         <div className="Posts">
           <div className="npersonInfo">
@@ -135,6 +133,7 @@ const middel = () => {
               <p>Hourly</p>
               <p>$50</p>
             </div>
+
             <div className="likeBtnAndCom">
               <div className="lik">
                 <button onClick={likeButton}>

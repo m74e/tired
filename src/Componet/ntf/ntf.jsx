@@ -26,7 +26,7 @@ export default function ntf() {
  
   return (
     <>
-      <div className="greenDot" onClick={watchModel}></div>
+      <div className={`${modal? "" :"greenDot"}`} ></div>
       <button className="headerBtn" onClick={watchModel}>
         <img src={`${showup == true ? ActiveNtf : Not}`} alt="" />
       </button>

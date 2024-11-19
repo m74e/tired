@@ -1,10 +1,10 @@
 .parantOfnewpro {
   width: 640px;
   height: 610px;
-  background-color: #ffffff;
+  background-color: #F8FBFC;
   font-family: Poppins;
   position: absolute;
-  top: 10px;
+  top: 0px;
   border-radius: 16px;
   box-shadow: 1px 2px 8px 0px #21868e40;
   z-index: 99;
@@ -12,6 +12,7 @@
   flex-direction: column;
   gap: 16px;
   padding: 16px 16px;
+  right: -3px;
 }
 .cancle{
     display: none;

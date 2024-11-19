@@ -6,6 +6,7 @@ import Vaild from "./Pages/pagevaild/vaild.jsx";
 import Email from "./Pages/email/email.jsx";
 import Web from "./Pages/web/web.jsx";
 import useStore from "./zustand/store.js";
+import Editprofile from "./EditProfile/editprofile.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <Routes>
         <Route path="/" element={counterPath()} />
         <Route path="/web" element={<Web /> } />
+        <Route path="/edit" element={<Editprofile /> } />
       </Routes>
     </BrowserRouter>
   );

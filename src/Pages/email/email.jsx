@@ -76,12 +76,13 @@ function Email() {
             </div>
           </div>
         </div>
+        
         <Link
        to="/web"
           className={`next3 ${
             name !== "" && pass.length > 7 && email !== "" ? "block2" : "none2"
           }  `}
-          onClick={()=>setCount(count+1)}
+          // onClick={()=>setCount(count+1)}
         >
           <p>Complete registration</p>
         </Link>
