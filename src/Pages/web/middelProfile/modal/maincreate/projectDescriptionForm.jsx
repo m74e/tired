@@ -6,7 +6,9 @@ import GreenA from "/public/greena.svg";
 import DownarrowG from "/public/downarrowg.svg";
 import useStore from "../../../../../zustand/store";
 import X from "/public/x.svg";
-import Upnew from "/public/upnew.svg"
+import Upnew from "/public/upnew.svg";
+
+
 const projectDescriptionForm = ({ setIsOpen }) => {
   const { nextModal, setNextModal } = useStore();
   const [select, setSelect] = useState();
@@ -20,6 +22,7 @@ const projectDescriptionForm = ({ setIsOpen }) => {
 
   return (
     <>
+    
       <div className="bigChild">
         <h2>Create a project</h2>{" "}
         <button className={`redX`} onClick={() => setIsOpen(false)}>

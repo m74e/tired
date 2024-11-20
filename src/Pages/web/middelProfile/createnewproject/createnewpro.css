@@ -1,19 +1,19 @@
 .parantOfnewpro {
   width: 640px;
   height: 610px;
-  background-color: #F8FBFC;
+  background-color: #f8fbfc;
   font-family: Poppins;
   position: absolute;
   top: 0px;
   border-radius: 16px;
   box-shadow: 1px 2px 8px 0px #21868e40;
-  z-index: 99;
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding: 16px 16px;
   right: -3px;
+  z-index: 99;
 }
-.cancle{
-    display: none;
+.cancle {
+  display: none;
 }

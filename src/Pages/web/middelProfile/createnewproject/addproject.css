@@ -39,6 +39,10 @@ font-size: 24px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  
+}
+.OL{
+  z-index: 2;
 }
 .bigChild .redX {
   border: 1px solid #eb0000;
