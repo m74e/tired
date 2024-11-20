@@ -4,7 +4,6 @@ import "./createnewpro.css";
 const projectModal = ({ children, isOpen }) => {
   return (
     <>
-    
       <div className={` ${isOpen ? "parantOfnewpro" : "cancle"}`}>
         {children}
       </div>

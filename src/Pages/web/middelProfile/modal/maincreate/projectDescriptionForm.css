@@ -136,7 +136,8 @@
   font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
-
+background-color: #F8FBFC;
+height: 200px;
 }
 #SelectRequiredQualificationsInput:focus {
   outline: none;

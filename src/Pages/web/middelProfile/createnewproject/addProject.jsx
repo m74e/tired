@@ -30,7 +30,7 @@ const addProject = ({ setIsOpen }) => {
       <input
         type="text"
         className="inputPriceInHour"
-        placeholder="Duration of the project"
+        placeholder=" Duration of the project"
       />
       <div className="SelectRequiredQualifications">
         <p className="PricingType">Pricing Type</p>
